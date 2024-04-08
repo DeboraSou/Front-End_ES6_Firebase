@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Externo. -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Icones. -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- ES6. -->
+  <script type="module">
+    import { appInstance } from "./js/controllers/App.js";
+    window.app = appInstance;
+    console.log(appInstance);
+  </script>
+
+  <title>Catracas EtecZL</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <!-- Logo. -->
+    <a href="#" aria-label="Página Inicial" role="button">
+      <img src="assets/etec.png" alt="Logo Etec Zona Leste" class="logo">
+    </a>
+
+    <div class="containerToggle">
+      <!-- Usuário. -->
+      <div id="user_identification_div" aria-label="Usuário" role="button" class="user">
+        <span class="material-symbols-outlined" style="font-size:30px; font-weight: bold;">person</span>
+      </div>
+      <a href="#" class="link_user">Nome de usuário</a>
+    </div>
+
+    <div class="containerToggle">
+      <!-- Botão Entrar. -->
+      <div type="button" aria-label="Entrar" role="button">
+        <a href="./js/views/navPages/login.html">
+          <button type='button' id="loginButton">Entrar</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="containerToggle">
+      <!-- Botão Cadastrar. -->
+      <div type="button" aria-label="Cadastrar" role="button">
+        <a href="./js/views/navPages/register.html">
+          <button type='button' id="registerButton">Cadastrar</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="containerToggle">
+      <!-- Botão Menu. -->
+      <div id="btnToggle" type="button" aria-label="Menu" role="button" class="toggle">
+        <span class="material-symbols-outlined" style="font-size:30px; font-weight: bold;">menu</span>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Menu. -->
+  <div class="nav">
+    <nav id="drawerMenu" class="btn_nav">
+      <ul class="ul">
+        <li class="li"><a class="btn_inside_nav" data-action="acao1" aria-label="Ação 1">Ação 1</a></li>
+        <li class="li"><a class="btn_inside_nav" data-action="acao2" aria-label="Ação 2">Ação 2</a></li>
+        <li class="li"><a class="btn_inside_nav" data-action="acao3" aria-label="Ação 3">Ação 3</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="container">
+    <h1 class="container_h1">Catracas EtecZL</h1>
+    <p class="container_p">
+      <strong>Controle de acesso: </strong>catracas EtecZL
+    </p>
+  </main>
+
+</body>
+
+</html>

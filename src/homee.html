@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+</head>
+
+<body>
+    <h1>Você entrou em sua conta!</h1>
+
+    <button id="logout-button">Sair</button>
+
+    <script type="module">
+    
+    import firebaseConfig from "./firebaseConfig.js";
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+        // Importação do criar usuário com e-mail e senha, fazer login como e-mail e senha e sair da conta.
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        const firebaseApp = initializeApp(firebaseConfig);
+        const firebaseAuth = getAuth(firebaseApp);
+
+        document.getElementById('logout-button').addEventListener('click', () => {
+            signOut(firebaseAuth)
+                .then(() => {
+                    console.log("%cUsuário desconectado!", "color: white; background-color: orange;");
+                    window.location.replace("/index.html");
+                    alert('Você está prestes a sair de sua conta!');
+                })
+                .catch((error) => {
+                    console.error('Erro ao fazer logout:', error.message);
+                });
+        });
+    </script>
+</body>
+
+</html>
