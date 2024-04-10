@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Externo. -->
+    <link rel="stylesheet" href="../../../../css/homee.css">
+
     <title>Início</title>
 </head>
 
 <body>
-    <h1>Você entrou em sua conta!</h1>
 
-    <button id="logout-button">Sair</button>
+    <section class="homee_body">
+        <div class="homee_container">
+            <h1 class="homee_title">Você entrou em sua conta!</h1>
+
+            <button id="logout-button" class="homee_btn homee_btn_link"
+                aria-label="Enviar formulário de login do usuário">Sair</button>
+        </div>
+    </section>
 
     <script type="module">
-    
-    import firebaseConfig from "./firebaseConfig.js";
+
+        import firebaseConfig from "./firebaseConfig.js";
 
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
