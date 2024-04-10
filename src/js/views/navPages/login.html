@@ -5,23 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Externo. -->
+    <link rel="stylesheet" href="../../../../css/login.css">
+
     <title>Entrar</title>
 </head>
 
 <body>
 
-    <h1>Entrar</h1>
-    <form id="login-form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <section class="sign_body">
+        <div class="sign_container">
 
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required>
+            <section class=sign>
 
-        <button type="submit">Entrar</button>
-    </form>
+                <form id="login-form" class="sign_form" role="form" aria-label="Formulário de login">
 
-    <button id="logout-button" style="display: none;">Sair</button>
+                    <div class="sign_logo">
+                        <a href="../../../../index.html" class="sign_a
+                    sign_social" aria-label="Página Inicial" role="button">
+                            <img src="../../../../assets/etec.png" alt="Logo Etec Zona Leste" class="sign_logo">
+                        </a>
+                    </div><br />
+
+                    <legend>
+                        <h1 class="sign_title">Bem-vindo de volta!</h1>
+                    </legend>
+
+                    <p class="sign_paragraph">Entre para acessar sua conta</p>
+
+                    <div class=sign_container_input>
+
+                        <label for="email">
+                            <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required
+                                aria-label="Email" role="textbox" autoComplete="email" class="sign_input" />
+                            <MdAlternateEmail class="sign_patient_expert_ico2" aria-hidden="true" />
+                        </label>
+
+                        <label for="password">
+                            <input type="password" name="password" id="password" placeholder="Senha" required
+                                aria-label="Senha" role="textbox" autoComplete="current-password" class="sign_input" />
+                        </label>
+                    </div>
+
+                    <button type="submit" class="sign_btn sign_btn_link"
+                        aria-label="Enviar formulário de login do usuário">Entrar</button>
+
+                    <p class="sign_paragraph">
+                        Ainda não tem uma conta?
+                        <a href="register.html" class="sign_a sign_account"> Cadastrar conta
+                        </a>
+                    </p>
+
+                </form>
+            </section>
+        </div>
+    </section>
 
     <script type="module">
 
