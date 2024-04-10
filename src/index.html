@@ -40,23 +40,23 @@
       <a href="#" class="link_user">Nome de usuário</a>
     </div>
 
-    <div class="containerToggle">
-      <!-- Botão Entrar. -->
+    <!-- Botão Entrar. -->
+    <!-- <div class="containerToggle">
       <div type="button" aria-label="Entrar" role="button">
         <a href="./js/views/navPages/login.html">
           <button type='button' id="loginButton">Entrar</button>
         </a>
       </div>
-    </div>
+    </div> -->
 
-    <div class="containerToggle">
-      <!-- Botão Cadastrar. -->
+    <!-- Botão Cadastrar. -->
+    <!-- <div class="containerToggle">
       <div type="button" aria-label="Cadastrar" role="button">
         <a href="./js/views/navPages/register.html">
           <button type='button' id="registerButton">Cadastrar</button>
         </a>
       </div>
-    </div>
+    </div> -->
 
     <div class="containerToggle">
       <!-- Botão Menu. -->
@@ -71,8 +71,17 @@
   <div class="nav">
     <nav id="drawerMenu" class="btn_nav">
       <ul class="ul">
-        <li class="li"><a class="btn_inside_nav" data-action="acao1" aria-label="Ação 1">Ação 1</a></li>
-        <li class="li"><a class="btn_inside_nav" data-action="acao2" aria-label="Ação 2">Ação 2</a></li>
+
+        <li class="li">
+          <a href="./js/views/navPages/login.html" class="btn_inside_nav" data-action="acao1"
+            aria-label="Entrar">Entrar</a>
+        </li>
+
+        <li class="li">
+          <a href="./js/views/navPages/register.html" class="btn_inside_nav" data-action="acao2"
+            aria-label="Cadastrar">Cadastrar</a>
+        </li>
+
         <li class="li"><a class="btn_inside_nav" data-action="acao3" aria-label="Ação 3">Ação 3</a></li>
       </ul>
     </nav>
