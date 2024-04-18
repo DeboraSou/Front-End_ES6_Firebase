@@ -70,6 +70,20 @@ Para acessar o aplicativo e suas funcionalidades completas, é necessário copia
 
 - **css:** Contém os arquivos CSS usados para estilizar a interface do usuário de acordo com as necessidades do aplicativo.
 
+## Ilustrações
+
+### Página Início
+![Página início](/src/assets/screen/inicio.png)
+
+### Menu
+![Menu](/src/assets/screen/menu.png)
+
+### Página Cadastrar
+![Página Cadastrar](/src/assets/screen/cadastrar.png)
+
+### Página Entrar
+![Página Entrar](/src/assets/screen/entrar.png)
+
 ## Créditos
 
 - O ícone de JavaScript utilizado neste projeto foi gentilmente disponibilizado por <a href="https://www.flaticon.com/br/icones-gratis/javascript" title="Javascript ícones" target="_blank" rel='noopener noreferrer'>Freepik - Flaticon</a>. Agradecimentos especiais aos criadores e colaboradores por disponibilizarem seu trabalho de forma gratuita.
