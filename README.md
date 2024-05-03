@@ -11,11 +11,11 @@
 
   <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" title="CSS | MDN" target="_blank" rel='noopener noreferrer'>
     <img align="center" alt="CSS3" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-  </a>
+  </a>&nbsp;
   
   <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" title="JavaScript | MDN" target="_blank" rel='noopener noreferrer'>
     <img align="center" alt="JavaScript" title="JavaScript" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-  </a>
+  </a>&nbsp;
 
   <a href="https://firebase.google.com/docs?hl=pt-br:" title="Firebase | DOC" target="_blank" rel='noopener noreferrer'>
     <img align="center" alt="Firebase" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg" />
